@@ -28,8 +28,8 @@ prueba3 = frase [::-1]
 print(prueba3)
 
 # Ejercicio 50
-frase = "Dábale arroz a la zorra el abad"
+palabra = "arenera"
 
-prueba3 = frase [::-1]
+prueba3 = palabra [::-1]
 print(prueba3)
 
