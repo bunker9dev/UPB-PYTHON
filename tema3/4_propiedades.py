@@ -16,7 +16,7 @@ print(n1+n2)
 
 # Los string se pueden multiplicar
 
-print( "jo" *5)
+print( "la" *5)
 
 
 # Los string pueden ser multilineales sin utilizar \n
