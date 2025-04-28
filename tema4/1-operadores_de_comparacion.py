@@ -63,7 +63,7 @@ miBool2 = num1 == num2
 print(miBool2)
 print(type(miBool2))
 
-#Ejercicio 72 
+#Ejercicio 73 
 num1 = 856*5
 num2 = 965*4
 miBool3 = num1 != num2
