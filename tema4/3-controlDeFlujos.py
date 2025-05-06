@@ -37,7 +37,7 @@ if edad < 18:
 else:
    print('eres adulto')
 
-
+'''
 # ejercicio No 77
 
 num1 = int(input("Ingresa un número:"))
@@ -80,7 +80,7 @@ elif hablaIngles == True and sabePython == False:
 else:
     print("Para postularte, necesitas saber programar en Python y tener conocimientos de inglés")
     
-'''
+
 
     # ejercicio No 80
 
