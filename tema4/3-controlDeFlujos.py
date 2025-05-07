@@ -1,5 +1,5 @@
 #control de flujos
-''' 
+
 if True :
     print("es correcto")
 
@@ -8,6 +8,23 @@ if True :
 x = True
 if x:
     print ('Es Correcto')
+
+# Evaluar si es mayor de edad para que pueda ingresar a la discoteca 
+edad = int(input("Ingrese su edad"))
+if edad >= 18:
+    print("puedes ingresar a la discotek")
+else:
+    print("Eres menor de edad, no puedes ingresar")
+ 
+
+#  evalUar si la nota es mayor o igual a 3.5 indica que aprobo la materia
+nota = float(input("Ingrese su nota"))
+if nota >= 3.5:
+	print("apobaste la materia")
+else:
+    print("Lo siento reprobaste la nota")
+
+''' 
 
 if 5 == 2:
   print ('Es Correcto')
@@ -37,7 +54,7 @@ if edad < 18:
 else:
    print('eres adulto')
 
-'''
+
 # ejercicio No 77
 
 num1 = int(input("Ingresa un número:"))
@@ -51,18 +68,53 @@ elif num2 > num1:
 else:
     print(f"{num1} y {num2} son iguales")
 
+'''
+# ejercicio No 78
+# solucion 1
+
+edad = int(input("ingrese la edad "))
+tiene_licencia = input( "ingrese s si tiene licencia, ingrese n si no tiene licencia ").lower()
+
+if edad >= 18 :
+    if tiene_licencia == "s":
+        print("puede Conducir")
+    else:
+        print("No puedes conducir. Necesitas contar con una licencia")
+elif edad < 18:
+    print("No puedes conducir aún. Debes tener 18 años y contar con una licencia")
 
 # ejercicio No 78
+    # solucion 2
 
-edad = 20
-tiene_licencia = True
+edad = int(input("ingrese la edad "))
 
-if edad > 18 and tiene_licencia != False:
-    print("Puedes conducir")
-elif edad < 18:
-    print ("No puedes conducir aún. Debes tener 18 años y contar con una licencia")
+if edad < 18 :
+    print("No puedes conducir aún. Debes tener 18 años y contar con una licencia")
+    
 else:
+    tiene_licencia =  input( "ingrese s si tiene licencia, ingrese n si no tiene licencia ").lower()
+    if tiene_licencia == "s":
+        print("puede Conducir")
+    else:
+        print("No puedes conducir. Necesitas contar con una licencia")
+
+# ejercicio No 78
+# solucion3
+edad = int(input("ingrese la edad "))
+tiene_licencia = input( "ingrese s si tiene licencia, ingrese n si no tiene licencia ").lower()
+
+if edad >= 18 and tiene_licencia == "s":
+    print("Puedes conducir")
+
+elif edad >= 18 and tiene_licencia != "s":
     print("No puedes conducir. Necesitas contar con una licencia")
+
+else:
+    print ("No puedes conducir aún. Debes tener 18 años y contar con una licencia")
+
+''' 
+
+
 
 
 # ejercicio No 79
@@ -99,3 +151,4 @@ elif usuarioOK == usuario and claveOk != clave:
 else:
      print("cuenta bloqueada")
 
+'''
