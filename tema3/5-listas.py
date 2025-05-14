@@ -99,3 +99,14 @@ frutas = ["manzana", "banana", "mango", "cereza", "sandía"]
 print(frutas)
 eliminado = frutas.pop(2)
 print(frutas)
+
+
+rgb = ["Red", "Green", "Blue"]
+
+rgba = rgb
+
+
+
+rgba.append("Alph, delta")
+
+print(rgb)

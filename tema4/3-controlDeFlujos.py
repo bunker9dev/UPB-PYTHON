@@ -1,6 +1,6 @@
-#control de flujos 
-
-# if 
+#control de flujos
+'''
+# if
 
 # Ejercicios Guiados
 # Ejercicio No 1
@@ -11,13 +11,13 @@ if b < a :
 
 # Ejercicio No 2
 if True:
-    print("imprime verdadero") 
+    print("imprime verdadero")
 
 
 # Ejercicio No 3
 disponible = True
 if disponible:
-    print("Disponible es verdadero") 
+    print("Disponible es verdadero")
 
 
 # Ejercicio No 4
@@ -47,7 +47,7 @@ if 345 == 345 :
     print("los dos valores son iguales ")
 
 # Ejercicio No 8
- 
+
 if 81 ** 0.5 == 9 :
     print("los dos valores son iguales ")
 
@@ -85,7 +85,7 @@ if i == j:
 
 
 
-# Ejercicios para ser desarrollado por los estudiantes 
+# Ejercicios para ser desarrollado por los estudiantes
 
 # Ejercicio No 13
 # Verifique si la raiz cuadrada de 213.16 es igual 14.6 si es verdadero, imprimir "la raiz cuadrada de 213.16 es igual 14.6"
@@ -104,172 +104,244 @@ letra2 = "programa"
 if len(letra1) == len(letra2) :
     print (f"la palabra {letra1} y {letra2} tienen la misma cantidad de letras")
     print ("la palabra " + letra1 + " y " + letra2 + " tienen la misma cantidad de letras")
-   
 
 
 
+# =============================================================================================
+# =============================================================================================
+# =============================================================================================
+# =============================================================================================
 
-''' 
-# Evaluar si es mayor de edad para que pueda ingresar a la discoteca 
-edad = int(input("Ingrese su edad"))
-if edad >= 18:
-    print("puedes ingresar a la discotek")
+# ELSE
+
+# Ejercicio No 15
+i = "Upb"
+j = "upb"
+
+if i == j:
+    print(f"Universidad Pontificia Bolivariana")
 else:
-    print("Eres menor de edad, no puedes ingresar")
- 
+    print(f"Las palabras {i} y {j} son diferentes")
 
-#  evalUar si la nota es mayor o igual a 3.5 indica que aprobo la materia
-nota = float(input("Ingrese su nota"))
-if nota >= 3.5:
-	print("apobaste la materia")
+
+# Ejercicio No 16
+i = "Upb"
+j = "upb"
+
+if i == j:
+    print(f"Universidad Pontificia Bolivariana")
 else:
-    print("Lo siento reprobaste la nota")
+    print(f"Las variables {i} y {j} son diferentes")
+    j = "Upb"
+    i = 34 + 56
+    sede = "Laureles"
 
 
+# Ejercicio No 17
+multi =  45 * 8
+suma = 485 +78
 
+if multi > suma :
+    print (f"""EL resultado de la multiplicacion es: {multi}
+EL resultado de la suma es: {suma}
+el valor del resultado de la multiplicacion es mayor al resultado de la suma""")
 
- 
-''' 
-materia = 'Matematicas'
-nota = 3.5
-
-if materia == 'Matematicas':
-   print('Te gusta Matematicas ')
-elif materia == 'sociales':
-   print('Te gusta sociales ')
 else:
-   print('No se que materia te gusta')
+    print (f"""EL resultado de la multiplicacion es: {multi}
+EL resultado de la suma es: {suma}
+el valor del resultado de la suma es mayor al resultado de la multiplicacion """)
 
-'''
+
+
+# Ejercicios para ser desarrollado por los estudiantes
+
+# Ejercicio No 18
+# preguntar al usuario cuantos años tiene y almacenar la informacion en una varibale.
+# hacer un programa que le indique si puede ingresar a la discoteca por ser mayor de edad(18 años)
+# si es mayor de edad debe aparecer el siguiente menssaje: Puedes ingresar a la discoteca, "BIENVENIDOS". Incluyendo las comillas
+# si no puede ingresar, decirle cuantos años le faltan para poder ingresar y salier el siguente mensaje
+
+edad = int(input("cuantos años tienes? "))
+
+if edad >= 18 :
+    print('Puedes ingresar a la discoteca, "BIENVENIDOS"')
+else:
+    print(f'lo sentimos no puedes ingresar, te faltan {18 - edad} años ')
+
+
+# Ejercicio No 19
+
+# Mostar al usuario el siguiente mensaje:
+#
+# escriba v si es verdadero
+# escriba f si es falso
+# pregunta:
+# los datos booleanos pueden tener los siguientes valores?:}
+# True, False  y None
+
+
+print ("""escribra V si es verdadero
+escriba F si es falso
+
+pregunta:
+los datos booleanos pueden tener los siguientes valores?
+
+True, False  y None
+""")
+
+respuesta = input("escriba su respuesta: ").lower()
+
+
+if respuesta == "f":
+    print("Felicitaciones, Respuesta correcta\n")
+else:
+    print(" Fallaste, solo pueden tener dos valores True o False \n")
+
+
+
+# =============================================================================================
+# =============================================================================================
+# =============================================================================================
+# =============================================================================================
+
+# ELIF
+
+
+# Ejercicio No 20
+respuesta = input("escriba su respuesta: ").lower()
+
+if respuesta == "f":
+    print("Felicitaciones, Respuesta correcta\n")
+elif respuesta == "v":
+    print(" Fallaste, solo pueden tener dos valores True o False \n")
+else:
+    print("Respuesta no valida \n")
+
+
+
+# Ejercicio No 21
+# Hacer un menu donde se indique un numero y ese numero este relacionado a una materia
+# 1 matematicas
+# 2 sociales
+# 3 ingles
+# 4 Programacion
+
+# pedirle al usuario ingrese un numero y cuando ingrese el numero aparezca en pantalla que materia seleccionaste
+
+
+print("""\n MENU
+
+INGRESE UN NUMERO PARA SELECCIONAR UNA MATERIA
+
+1- MATEMATICAS
+2- SOCIALES
+3- TECNOLOGIA
+4- INGLES
+      """)
+
+seleccion  = int(input ("Ingrese un numero: " ))
+
+
+if seleccion == 1:
+   print('Escogiste Matematicas')
+elif seleccion == 2:
+    print('Escogiste Sociales')
+elif seleccion == 3:
+    print('Escogiste Tecnologia')
+elif seleccion == 4:
+    print('Escogiste Ingles')
+else:
+    print('Dato no valido')
+
+
+# Ejercicio No 22
+# Pedirle al usuario que ingrese un numero y decir si ese nuemero es psotivo, negativo o es igual a cero
+
 numero = float(input("Ingresa un número: "))
+
 if numero > 0:
         print("El número es positivo.")
-    
+
 elif numero < 0:
         print("El número es negativo.")
 else:
         print("El número es cero.")
 
 
-edad = 16
-calificacion = 3.1
-
-if edad < 18:
-   print('Eres menor de edad')
-   if calificacion >= 3:
-      print('Aprobo la materia')
-   else:
-      print('Reprobo la materia')
-else:
-   print('eres adulto')
-
-
-# ejercicio No 77
-
-num1 = int(input("Ingresa un número:"))
-num2 = int(input("Ingresa otro número:"))
-
-
-if num1 > num2:
-    print(f"{num1} es mayor que {num2}")
-elif num2 > num1:
-    print(f"{num2} es mayor que {num1}")
-else:
-    print(f"{num1} y {num2} son iguales")
-
-# ejercicio No 78
-# solucion 1
-
-edad = int(input("ingrese la edad "))
-tiene_licencia = input( "ingrese s si tiene licencia, ingrese n si no tiene licencia ").lower()
-
-if edad >= 18 :
-    if tiene_licencia == "s":
-        print("puede Conducir")
-    else:
-        print("No puedes conducir. Necesitas contar con una licencia")
-elif edad < 18:
-    print("No puedes conducir aún. Debes tener 18 años y contar con una licencia")
-
-# Una línea de declaración if else:
-a = 2
-b = 330
-print("A") if a > b else print("B")
-
-# Prueba si aes mayor que b, Y si c es mayor que a:
-a = 200
-b = 33
-c = 500
-if a > b and c > a:
-  print("ambas condiciones son verdaderas")
-
-
-
-# ejercicio No 78
-    # solucion 2
-
-edad = int(input("ingrese la edad "))
-
-if edad < 18 :
-    print("No puedes conducir aún. Debes tener 18 años y contar con una licencia")
-    
-else:
-    tiene_licencia =  input( "ingrese s si tiene licencia, ingrese n si no tiene licencia ").lower()
-    if tiene_licencia == "s":
-        print("puede Conducir")
-    else:
-        print("No puedes conducir. Necesitas contar con una licencia")
-
-# ejercicio No 78
-# solucion3
-edad = int(input("ingrese la edad "))
-tiene_licencia = input( "ingrese s si tiene licencia, ingrese n si no tiene licencia ").lower()
-
-if edad >= 18 and tiene_licencia == "s":
-    print("Puedes conducir")
-
-elif edad >= 18 and tiene_licencia != "s":
-    print("No puedes conducir. Necesitas contar con una licencia")
-
-else:
-    print ("No puedes conducir aún. Debes tener 18 años y contar con una licencia")
-
-
-
-
-
-# ejercicio No 79
-
-hablaIngles = True
-sabePython = False
-
-if hablaIngles == True and sabePython == True:
-    print("Cumples con los requisitos para postularte")
-elif hablaIngles == False and sabePython == True:
-    print("Para postularte, necesitas tener conocimientos de inglés")
-elif hablaIngles == True and sabePython == False:
-    print("Para postularte, necesitas saber programar en Python")
-
-else:
-    print("Para postularte, necesitas saber programar en Python y tener conocimientos de inglés")
-    
-
-
-    # ejercicio No 80
-
-usuarioOK = "python"
-claveOk = "upb123"
-
-usuario = input("Ingresa el usuario:")
-clave = input("Ingresa la clave:")
-
-if usuarioOK == usuario and claveOk == clave:
-    print("Bienvenido")
-elif usuarioOK != usuario and claveOk == clave:
-    print("usuario incorrecto ")
-elif usuarioOK == usuario and claveOk != clave:
-    print("clave incorrecta ")
-else:
-     print("cuenta bloqueada")
-
 '''
+# EJERCICIO PARA DESARROLLAR EL ESTUDIANTE
+
+# Ejercicio No 23 
+# calcular el valor final de una factura si el cliente acepta adicionar la propina o no
+# (valor de la propina 10%)
+# debes de ingresar el valor de la venta y preguntar si incluyen el servicio si(S) o No(N)
+# si incluye el servicio indicar cuanto seria el pago total
+# y si no incluye la propina indicar el valor de la factura
+# si escribe otro dato indicar que es una respuesta errónea
+
+
+factura = int(input("INGRESE EL VALOR DEL SERVICIO: "))
+propina = input("ADICIONAMOS EL SERVICIO SI(S) NO(N): ").lower()
+
+if propina == "s":
+     print(f"EL valor total de la factura es {factura + (factura*0.1)}")
+elif propina == "N":
+     print(f"EL valor total de la factura es {factura}")
+else: 
+     print(f"{propina} No es una respuesta correcta" )
+    
+
+
+# Ejercicio No 24
+#	indicar si el número es menor o igual  a cero
+# indicar si el número es mayor a cero y menor o igual a 10
+# indicar si el número es mayor a 10 y menor o igual a 20
+# indicar si el número es mayor a 20 y menor o igual a 30
+# indicar si el número es mayor a 30
+
+
+numero = int (input("ingrese un numero: "))
+
+if numero <= 0:
+     print(f"numero {numero} es menor o igual  a cero")
+elif numero > 0 and numero <= 10 :
+     print(f"numero {numero} es mayor a cero y menor o igual a 10")
+elif numero > 10 and numero <= 20 :
+     print(f"numero {numero} es mayor a 10 y menor o igual a 20")
+elif numero > 20 and numero <= 30 :
+     print(f"numero {numero} es mayor a 20 y menor o igual a 30")
+else:
+      print(f"numero {numero} es mayor a 30 ")
+
+
+# Ejercicio No 25
+
+# Crea un programa que le pida al usuario una moneda destino (USD, EUR o JPY) 
+# y convierta un monto ingresado desde pesos colombianos (COP) a la moneda 
+# seleccionada usando tasas predefinidas guardadas en un diccionario.
+
+# Usar un diccionario para las tasas de conversión.
+# Usar if, elif, else para manejar las opciones de moneda.
+# Si el usuario escribe una moneda no válida, mostrar un mensaje de error.
+
+tasas = {
+    "USD": 0.00025,   # 1 COP = 0.00025 USD
+    "EUR": 0.00021,   # 1 COP = 0.00021 EUR
+    "JPY": 0.035      # 1 COP = 0.036 JPY
+}
+
+pesoCol = float(input("ingrese un valor en pesos Colombianos (COP: "))
+
+cambio = input("¿A qué moneda desea convertir?  escriba (USD, EUR, JPY): ").upper()
+
+if cambio == "USD":
+     valor = pesoCol * tasas["USD"]
+     print(f" el cambio de ${pesoCol} a Dolares es {valor:2f}USD")
+elif cambio == "EUR":
+     valor = pesoCol * tasas["EUR"]
+     print(f" el cambio de ${pesoCol} a Euros es {valor:2f}EUR")
+elif cambio == "JPY":
+     valor = pesoCol * tasas["JPY"]
+     print(f" el cambio de ${pesoCol} a yens {valor:2f}JPY")
+else:
+     print("Has ingresado un dato erroneo")
