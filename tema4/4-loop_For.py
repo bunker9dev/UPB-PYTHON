@@ -60,7 +60,69 @@ for item in dicc.items():
 for a , b  in dicc.items():
     print(a, b)
 
-    '''
+ 
+
+# Sumar valores de un diccionario
+
+ventas = {"enero": 1500, "febrero": 1800, "marzo": 1700}
+total = 0
+
+for valor in ventas.values():
+    total += valor
+
+print(f"Total ventas: {total}")
+
+
+
+
+# Contar cuántas veces aparece cada letra en una palabra
+
+palabra = "banana"
+frecuencia = {}
+
+for letra in palabra:
+    frecuencia[letra] = frecuencia.get(letra, 0) + 1
+
+print(frecuencia)
+
+   '''
+# Filtrar elementos con valores mayores a un umbral
+# indicar que estudiantes aprobaron la materia y el valor de la nota
+
+notas = {"Juan": 4.5, "Ana": 2.8, "Luis": 3.9}
+
+for estudiante, nota in notas.items():
+    if nota >= 3.5:
+        print(f"{estudiante} aprobó con {nota}")
+
+
+# Contar cuántas personas hay por ciudad
+
+personas = [
+    {"nombre": "Ana", "ciudad": "Cali"},
+    {"nombre": "Luis", "ciudad": "Bogotá"},
+    {"nombre": "Marta", "ciudad": "Cali"}
+]
+
+conteo_ciudades = {}
+
+for persona in personas:
+    ciudad = persona["ciudad"]
+    conteo_ciudades[ciudad] = conteo_ciudades.get(ciudad, 0) + 1
+
+print(conteo_ciudades)
+
+# Crear un diccionario de conteo de palabras
+
+frase = "hola mundo hola mundo mundo"
+palabras = frase.split() #split separa palabras
+conteo = {}
+
+for palabra in palabras:
+    conteo[palabra] = conteo.get(palabra, 0) + 1
+
+print(conteo)
+
 
 # ejercicio 81
 

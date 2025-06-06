@@ -268,7 +268,6 @@ else:
         print("El número es cero.")
 
 
-'''
 # EJERCICIO PARA DESARROLLAR EL ESTUDIANTE
 
 # Ejercicio No 23 
@@ -320,6 +319,7 @@ else:
 # y convierta un monto ingresado desde pesos colombianos (COP) a la moneda 
 # seleccionada usando tasas predefinidas guardadas en un diccionario.
 
+
 # Usar un diccionario para las tasas de conversión.
 # Usar if, elif, else para manejar las opciones de moneda.
 # Si el usuario escribe una moneda no válida, mostrar un mensaje de error.
@@ -344,4 +344,89 @@ elif cambio == "JPY":
      valor = pesoCol * tasas["JPY"]
      print(f" el cambio de ${pesoCol} a yens {valor:2f}JPY")
 else:
-     print("Has ingresado un dato erroneo")
+    print("Has ingresado un dato erroneo")
+
+
+# Ejercicio No 26
+    # Pide al usuario su cargo (por ejemplo: "admin", “gerente, "cajero", "vendedor", “cliente). 
+    # Si el rol es "admin" o "gerente", 
+    # muestra un mensaje que diga "Acceso permitido", de lo contrario, "Acceso denegado".
+
+cargo = input("Introduce tu cargo: ").lower()
+
+if cargo == "admin" or cargo == "gerente":
+    print("Acceso permitido")
+else:
+    print("Acceso denegado")
+
+
+# Ejercicio No 27
+# Pide al usuario que introduzca un día de la semana. 
+# Si el día es sabado o domingo, muestra "Es fin de semana",
+# si no, muestra "Tenemos clase".
+
+dia = input("Introduce un día de la semana: ").lower()
+
+if dia == "sabado" or dia == "domingo":
+    print("Es fin de semana")
+else:
+    print("tenemos clase")
+
+
+# Ejercicio No 28
+# Pide al usuario su nombre. Si se llama "Laura" o "Mateo", 
+# muestra: “Usuario autorizado”. 
+# Si no, muestra: “Acceso denegado”.
+
+nombre = input("Introduce tu nombre: ").capitalize()
+
+if nombre == "Laura" or nombre == "Mateo":
+    print("Usuario autorizado")
+else:
+    print("Acceso denegado")
+
+
+# Ejercicio No 29
+# Pide al usuario su edad y su cargo. 
+# Si tiene más de 18 años y su cargo es "admin" o "gerente", 
+# debe mostrarse: "Acceso permitido", de lo contrario, "Acceso negado".
+
+edad = int(input("Introduce tu edad: "))
+cargo = input("Introduce tu cargo: ").lower()
+
+if edad > 18 and (cargo == "admin" or cargo == "gerente"):
+    print("Acceso permitido")
+else:
+    print("Acceso negado")
+
+# Ejercicio No 30
+# Pide al usuario el país y el total de su compra.
+# Si el país es "Colombia" o "Ecuador" 
+# y el total de la compra es mayor o igual 
+# a 500.000, el envío es gratis.
+
+pais = input("Introduce tu país: ").lower()
+total = float(input("Total de la compra: "))
+
+if (pais == "colombia" or pais == "ecuador") and total >= 50000:
+    print("¡Envío gratuito!")
+else:
+    print("Genera costo de envío")
+
+
+'''
+# Ejercicio No 31
+# Pide que ingresen una nota (de 0 a 10). 
+# Si la nota es mayor o igual a 5 
+# y es un número entre 0 y 10 (inclusive), 
+# muestra "Aprobado". Si no, 
+# muestra un mensaje "Nota no valida".
+
+nota = float(input("Introduce tu nota (0 a 10): "))
+
+if nota >= 0 and nota <=10 and nota >= 5:
+    print("Aprobado")
+elif nota >= 0 and nota <=10:
+    print("Reprobado")
+else:
+    print("Nota inválida")
